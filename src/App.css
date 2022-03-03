@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* importing google fonts SYNE and UNICA */
+@import url('https://fonts.googleapis.com/css2?family=Syne&family=Unica+One&display=swap');
+
+
+body {
+  font-family: 'Syne', sans-serif;
+  /* font-family: 'Unica One', cursive; */
+}
