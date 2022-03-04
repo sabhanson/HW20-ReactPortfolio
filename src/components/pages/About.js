@@ -11,26 +11,35 @@ const styles = {
     // height: '500px'
   },
   h1: {
-    fontSize: '3rem'
+    fontSize: "3rem",
+    fontFamily: 'Unica One, cursive',
+    color: '#F4E285',
+    textShadow: '2px 2px black'
   },
   p: {
-    padding: '2rem'
+    padding: '2rem',
+    margin: '1.5rem 3rem',
+    fontFamily: 'Syne, sans-serif',
+    background: '#F4E285',
+    borderRadius: '20px',
+    border: '3px solid #FFA500'
   },
   img: {
-    borderRadius: '50%'
+    borderRadius: '50%',
+    width: '250px'
   }
 }
     
     export default function About() {
       return (
         <div style={styles.div}>
-      <h1 style={styles.h1}>About Me</h1>
-       {/* TODO: write about me paragraph */}
-      <p style={styles.p}>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non finibus erat. Curabitur convallis egestas turpis sed sagittis. Aliquam lacus libero, pharetra vitae arcu vel, ullamcorper aliquet elit. Aenean lobortis purus id egestas maximus. Vestibulum sit amet congue sem. Maecenas pretium scelerisque elit, at pharetra mi blandit in. Donec vestibulum erat sed pretium blandit. Aliquam tempus quis odio id ultricies. Fusce pharetra sollicitudin cursus. Integer fermentum eros a dui commodo tristique. Quisque a risus eu odio hendrerit malesuada vel eget ante. Duis finibus suscipit dolor, nec viverra leo cursus vel.
-      </p>
+      <h1 style={styles.h1}>ABOUT ME</h1>
       {/* TODO: take a better headshot */}
-      <img style={styles.img} width={'50%'} alt='pic of me' src='./joe-dirt.jpeg'/>
+      <img style={styles.img} alt='pic of me' src='./IMG_3130.jpg'/>
+      <p style={styles.p}>
+      I'm a recent coding bootcamp graduate looking to expand my skills and knowledge. I have experience with both front and back end development. I am particularly passionate about HTML and CSS, and making the web more pleasant and beautiful. I live in SW Washington state with my partner and our two dogs. My hobbies include thrift shopping, road trips, photography, and making stained glass art.
+      </p>
+       {/* TODO: write about me paragraph */}
     </div>
   )
 }

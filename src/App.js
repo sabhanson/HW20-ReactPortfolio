@@ -1,13 +1,13 @@
 import React from "react";
 import "./App.css";
-import Project from "./components/Project";
 import Navigation from "./components/Navigation";
 import Header from "./components/Header";
 import Footer from './components/Footer'
 
 const styles = {
   app: {
-    background: "#84A98C"
+    background: "#84A98C",
+    height: "100vh"
   }
 }
 // when the app is initially opened, a user will see the main/default page (about me)
@@ -21,7 +21,6 @@ const styles = {
 function App() {
   return (
     <div className="App" style={styles.app}>
-      {/* <Project /> */}
       <Header />
       <Footer />
     </div>

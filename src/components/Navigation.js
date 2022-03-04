@@ -4,6 +4,7 @@ import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 import "bootstrap/dist/css/bootstrap.min.css";
+import '../styles/Navigation.css'
 
 const styles = {
   nav: {
@@ -17,6 +18,8 @@ const styles = {
   },
   navbarLink: {
     color: "black",
+    fontSize: "1.3rem",
+    fontFamily: "Unica One, cursive"
   },
 };
 
@@ -35,7 +38,7 @@ function Navigation({ currentPage, handlePageChange }) {
             className={currentPage === "About" ? "nav-link active" : "nav-link"}
             style={styles.navbarLink}
           >
-            About
+            ABOUT
           </a>
         </li>
         <li className="nav-item">
@@ -47,7 +50,7 @@ function Navigation({ currentPage, handlePageChange }) {
             }
             style={styles.navbarLink}
           >
-            Portfolio
+            PORTFOLIO
           </a>
         </li>
         <li className="nav-item">
@@ -59,7 +62,7 @@ function Navigation({ currentPage, handlePageChange }) {
             }
             style={styles.navbarLink}
           >
-            Contact Me
+            CONTACT ME
           </a>
         </li>
         <li className="nav-item">
@@ -71,7 +74,7 @@ function Navigation({ currentPage, handlePageChange }) {
             }
             style={styles.navbarLink}
           >
-            Resume
+            RESUME
           </a>
         </li>
       </ul>

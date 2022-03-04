@@ -5,6 +5,7 @@ import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 import "bootstrap/dist/css/bootstrap.min.css";
+import projects from "./projects";
 
 // the header renders my name and the navbar items
 const styles = {
@@ -41,7 +42,7 @@ function Header() {
       return <About />;
     }
     if (currentPage === "Portfolio") {
-      return <Portfolio />;
+      return <Portfolio projects={projects} />;
     }
     if (currentPage === "Contact") {
       return <Contact />;

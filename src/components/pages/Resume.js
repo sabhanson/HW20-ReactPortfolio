@@ -17,6 +17,7 @@ export default function Resume() {
   return (
     <div style={styles.div}>
       <h1 style={styles.h1}>Resume</h1>
+      <a href="/index.html" download={true}>dowload me</a>
     </div>
   );
 }
