@@ -1,7 +1,13 @@
 .unfocus {
-  color: blue;
+  color: black;
+  outline: 0;
 }
 
 .focus {
-  color: pink;
+  outline: 0;
+  color: black;
+}
+
+::placeholder {
+  color: black;
 }

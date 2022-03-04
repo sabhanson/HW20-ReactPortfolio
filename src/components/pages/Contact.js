@@ -1,10 +1,34 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import '../../styles/Contact.css'
+import "../../styles/Contact.css";
 
 const styles = {
   div: {
     padding: "2rem 0 3rem 0",
+  },
+  h1: {
+    fontSize: "3rem",
+    fontFamily: 'Unica One, cursive',
+    color: '#F4E285',
+    textShadow: '2px 2px black'
+  },
+  inputs: {
+    width: "60%",
+    background: "#F4E285",
+    border: "3px solid #FFA500",
+    borderRadius: "8px",
+    resize: "none",
+    fontFamily: 'Syne, sans-serif',
+    margin: ".2rem",
+    color: 'black'
+  },
+  submit: {
+    background: "#F4E285",
+    borderRadius: '10px',
+    border: "2px solid black",
+    fontFamily: 'Unica One, cursive',
+    color: 'black',
+    fontWeight: 'bold'
   }
 };
 
@@ -20,34 +44,55 @@ export default function Contact() {
 
   const handleFocusChange = (hover) => setFocus(hover);
 
+  // const validateEmail = () => {
+  //   if
+  // }
+
   return (
     <div style={styles.div}>
-      <h1>Contact Me!</h1>
+      <h1 style={styles.h1}>CONTACT ME</h1>
       <form>
         {/* NAME INPUT */}
         {/* onFocus (when interacting) set the focus state to focus, onBlur (when not interacting) run the validation to check if the name is in the correct format */}
         <input
           onFocus={() => handleFocusChange("Focus")}
-          onBlur={() => handleFocusChange("Unfocus") }
-          
+          onBlur={() => handleFocusChange("Unfocus")}
           className={focus === "Unfocus" ? "unfocus" : "focus"}
+          style={styles.inputs}
           type={"text"}
           placeholder={"enter your name..."}
         ></input>
         <br />
         {/* <label>Your Email</label> */}
-        <input type={"text"} placeholder={"enter your email..."}></input>
+        <input
+          onFocus={() => handleFocusChange("Focus")}
+          onBlur={() => handleFocusChange("Unfocus")}
+          className={focus === "Unfocus" ? "unfocus" : "focus"}
+          style={styles.inputs}
+          type={"email"}
+          placeholder={"enter your email..."}
+        ></input>
         <br />
         {/* <label>Your Message</label> */}
         <textarea
+          onFocus={() => handleFocusChange("Focus")}
+          onBlur={() => handleFocusChange("Unfocus")}
+          className={focus === "Unfocus" ? "unfocus" : "focus"}
           type={"text"}
+          style={styles.inputs}
           placeholder={"enter your message..."}
         ></textarea>
         <br />
-        <input type={"submit"}></input>
+        <input value="SUBMIT" type={"submit"} style={styles.submit}></input>
       </form>
     </div>
   );
 }
 
 // onFocus
+
+
+// TODO: make submit button look cuter
+// TODO: validation for name
+// TODO: validation for email
+// TODO: validation for message

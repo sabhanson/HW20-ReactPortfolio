@@ -9,7 +9,6 @@ const styles = {
   nav: {
     // background: "#84a98c",
     width: "100%",
-    height: "500px",
   },
   ul: {
     display: "flex",
