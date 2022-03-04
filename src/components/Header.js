@@ -21,7 +21,8 @@ const styles = {
     alignItems: "center",
   },
   innerDiv: {
-    width: '100%'
+    width: '100%',
+    fontSize: '1.3rem'
   },
   h1: {
     fontSize: "3rem",

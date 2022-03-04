@@ -5,6 +5,7 @@ import "../../styles/Contact.css";
 const styles = {
   div: {
     padding: "2rem 0 3rem 0",
+    // height: '100%'
   },
   h1: {
     fontSize: "3rem",
@@ -13,7 +14,7 @@ const styles = {
     textShadow: '2px 2px black'
   },
   inputs: {
-    width: "60%",
+    width: "50%",
     background: "#F4E285",
     border: "3px solid #FFA500",
     borderRadius: "8px",
@@ -29,6 +30,9 @@ const styles = {
     fontFamily: 'Unica One, cursive',
     color: 'black',
     fontWeight: 'bold'
+  },
+  p: {
+    fontFamily: "Syne, sans-serif"
   }
 };
 
@@ -44,9 +48,25 @@ export default function Contact() {
 
   const handleFocusChange = (hover) => setFocus(hover);
 
-  // const validateEmail = () => {
-  //   if
-  // }
+  // onBlur for name input
+
+// need to run a function to validate a name input
+  // must be between 1-40 characters
+  // if null, alert "you must enter a name"
+  // if valid, allow for form submission
+
+// need to run a function to validate an email onBlur
+  // regex pattern: /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+  // if null, alert "you must enter an email"
+  // if invalid, alert "you must enter an email in the proper format"
+  // if valid, allow for form submission
+
+// need to run a function to validate the message input
+  // must be between 10 and 500 characters
+  // if null, alert "you must enter a message"
+  // if valid, allow for form submission
+
+
 
   return (
     <div style={styles.div}>
@@ -63,7 +83,7 @@ export default function Contact() {
           placeholder={"enter your name..."}
         ></input>
         <br />
-        {/* <label>Your Email</label> */}
+        {/* EMAIL INPUT */}
         <input
           onFocus={() => handleFocusChange("Focus")}
           onBlur={() => handleFocusChange("Unfocus")}
@@ -73,7 +93,7 @@ export default function Contact() {
           placeholder={"enter your email..."}
         ></input>
         <br />
-        {/* <label>Your Message</label> */}
+        {/* MESSAGE INPUT */}
         <textarea
           onFocus={() => handleFocusChange("Focus")}
           onBlur={() => handleFocusChange("Unfocus")}
@@ -85,6 +105,8 @@ export default function Contact() {
         <br />
         <input value="SUBMIT" type={"submit"} style={styles.submit}></input>
       </form>
+      <p style={styles.p}>email: sabhanson7@gmail.com</p>
+      <p style={styles.p}>cell: 360-619-2530</p>
     </div>
   );
 }

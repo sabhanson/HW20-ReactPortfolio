@@ -42,6 +42,7 @@ export default function Portfolio({ projects }) {
           <img style={styles.img} src={project.imageURL} alt="alt text" className="card-img-top" />
           <div className="card-body">
             <p className="card-text">{project.name}</p>
+            <hr/>
             <div className="card-body">
               <a
                 href={project.githubURL}
@@ -50,8 +51,8 @@ export default function Portfolio({ projects }) {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="50"
-                  height="50"
+                  width="35"
+                  height="35"
                   style={styles.icon}
                   fill="currentColor"
                   class="bi bi-github"
@@ -66,8 +67,8 @@ export default function Portfolio({ projects }) {
                 className="card-link"
               >
               <svg
-                xmlns="http://www.w3.org/2000/svg"                   width="50"
-                height="50"
+                xmlns="http://www.w3.org/2000/svg"                   width="35"
+                height="35"
                 style={styles.icon}
                 fill="currentColor"
                 class="bi bi-globe"

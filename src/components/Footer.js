@@ -82,7 +82,7 @@ function Footer() {
           </a>
         </li>
       </div>
-      <p style={styles.p}>&copy; SABRINA HANSON - 2022</p>
+      <p style={styles.p}>&copy; SABRINA HANSON 2022</p>
     </footer>
   );
 }

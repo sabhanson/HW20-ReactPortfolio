@@ -8,7 +8,7 @@ const styles = {
   div: {
     paddingBottom: '3rem',
     paddingTop: '2rem',
-    // height: '500px'
+    // height: '100%'
   },
   h1: {
     fontSize: "3rem",
@@ -26,20 +26,23 @@ const styles = {
   },
   img: {
     borderRadius: '50%',
-    width: '250px'
+    width: '250px',
   }
 }
     
     export default function About() {
       return (
-        <div style={styles.div}>
+      <div style={styles.div}>
       <h1 style={styles.h1}>ABOUT ME</h1>
       {/* TODO: take a better headshot */}
       <img style={styles.img} alt='pic of me' src='./IMG_3130.jpg'/>
+      <div className="row d-flex justify-content-center">
+      <div className="col-6 my-3">
       <p style={styles.p}>
-      I'm a recent coding bootcamp graduate looking to expand my skills and knowledge. I have experience with both front and back end development. I am particularly passionate about HTML and CSS, and making the web more pleasant and beautiful. I live in SW Washington state with my partner and our two dogs. My hobbies include thrift shopping, road trips, photography, and making stained glass art.
+      I'm a recent coding bootcamp graduate looking to expand my skills and knowledge. I have experience with both front and back end development. I am particularly passionate about HTML and CSS to make the web more pleasant and beautiful. I live in SW Washington state with my partner and our two dogs. My hobbies include thrift shopping, road trips, photography, and making stained glass art.
       </p>
-       {/* TODO: write about me paragraph */}
+      </div>
+      </div>
     </div>
   )
 }
