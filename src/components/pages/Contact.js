@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const styles = {
@@ -48,7 +48,7 @@ export default function Contact() {
   };
 
   const validateEmail = (email) => {
-    if (/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/.test(email)) {
+    if (/^([a-z0-9_.-]+)@([\da-z.-]+).([a-z.]{2,6})$/.test(email)) {
       return true;
     } else {
       window.alert("Please enter an email in valid format, email@website.com");

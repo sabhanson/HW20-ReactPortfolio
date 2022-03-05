@@ -4,7 +4,7 @@ const projects = [
     name: "Seeded - Social Media for All Things Plants",
     githubURL: "https://github.com/sabhanson/seeded",
     deployedURL: "https://seed-ed.herokuapp.com/",
-    imageURL: "./seeded.jpeg",
+    imageURL: "../public/seeded.jpeg",
     tech: "Full Stack CRUD Application",
   },
   {

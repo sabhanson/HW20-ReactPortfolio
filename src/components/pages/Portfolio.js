@@ -26,8 +26,8 @@ const styles = {
     fontSize: "2rem",
   },
   img: {
-    maxHeight: "60%",
-    width: "auto",
+    // maxHeight: "60%",
+    // width: "auto",
   },
 };
 
@@ -47,9 +47,9 @@ export default function Portfolio({ projects }) {
         >
           <img
             style={styles.img}
-            src={project.imageURL}
+            src={"project.imageURL"}
             alt="alt text"
-            className="card-img-top"
+            className="card-img-top img img-fluid"
           />
           <div className="card-body">
             <p className="card-text">{project.name}</p>
@@ -59,6 +59,7 @@ export default function Portfolio({ projects }) {
                 href={project.githubURL}
                 target={"_blank"}
                 className="card-link"
+                rel={"noreferrer"}
               >
                 <i style={styles.icon} class="bi bi-github"></i>
               </a>
@@ -66,6 +67,7 @@ export default function Portfolio({ projects }) {
                 href={project.deployedURL}
                 target={"_blank"}
                 className="card-link"
+                rel={"noreferrer"}
               >
                 <i style={styles.icon} class="bi bi-globe"></i>
               </a>
