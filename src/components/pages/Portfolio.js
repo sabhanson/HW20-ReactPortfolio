@@ -47,7 +47,7 @@ export default function Portfolio({ projects }) {
         >
           <img
             style={styles.img}
-            src={"project.imageURL"}
+            src={project.imageURL}
             alt="alt text"
             className="card-img-top img img-fluid"
           />

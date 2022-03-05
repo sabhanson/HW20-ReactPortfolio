@@ -33,7 +33,11 @@ export default function About() {
     <div style={styles.div}>
       <h1 style={styles.h1}>ABOUT ME</h1>
       {/* TODO: take a better headshot */}
-      <img style={styles.img} alt="pic of me" src="./IMG_3130.jpg" />
+      <img
+        style={styles.img}
+        alt="pic of me"
+        src="https://lh3.googleusercontent.com/pw/AM-JKLV-v0G4Nee952WH9KmSqyuQH8NmnBxWmorB16O6Moiv9OGAA2ZTV8w4GL7AkNLFpH4FAaD312E8V4XxzywUAHXhxOZf_d7AjJSwnt7FC37Jb-TtHLdKwWFHts1g7STATwj0zbjYTCN8ZQRiNTeW_scn=w556-h585-no?authuser=0"
+      />
       <div className="row d-flex justify-content-center">
         <div className="col-sm-11 col-md-8 col-lg-6 my-3">
           <p style={styles.p}>

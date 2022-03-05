@@ -10,7 +10,7 @@ import projects from "./projects";
 // the header renders my name and the navbar items
 const styles = {
   div: {
-    backgroundImage: `url('./pearl.jpeg')`,
+    backgroundImage: `url('https://lh3.googleusercontent.com/pw/AM-JKLW8v_Tku2SjtlxDyGlDKbuCak5iz6EJza_cCeYN4mHIf1YvqfNbGNIsH0QvumVoVCMfdiH6HS9UHH_2iH93r160tkUJebIw-sUgZ-_KRN8aS-NJdlb5kDyCeCDDw1qcKam0j-73ax9Bo2WKWNdY7BAq=w1920-h455-no?authuser=0')`,
     width: "100%",
     paddingTop: "30px",
     height: "200px",

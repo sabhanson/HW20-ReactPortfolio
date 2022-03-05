@@ -61,10 +61,6 @@ export default function Contact() {
     }
   };
 
-  const submit = () => {
-    console.log("submitted");
-  };
-
   return (
     <div className="row justify-content-center" style={styles.div}>
       <h1 style={styles.h1}>CONTACT ME</h1>
@@ -105,12 +101,7 @@ export default function Contact() {
           placeholder={"enter your message..."}
         ></textarea>
         <br />
-        <input
-          onClick={submit()}
-          value="SUBMIT"
-          type={"button"}
-          style={styles.submit}
-        ></input>
+        <input value="SUBMIT" type={"button"} style={styles.submit}></input>
       </form>
       <p style={styles.p}>
         alternatively, contact me via:
