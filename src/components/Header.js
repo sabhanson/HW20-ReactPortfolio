@@ -14,8 +14,6 @@ const styles = {
     width: "100%",
     paddingTop: "30px",
     height: "200px",
-    border: "3px dotted #ffa500",
-    borderRadius: "20px",
     justifyContent: "center",
     alignItems: "center",
   },

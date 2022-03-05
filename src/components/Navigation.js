@@ -30,8 +30,8 @@ const styles = {
 function Navigation({ currentPage, handlePageChange }) {
   return (
     <nav style={styles.nav}>
-      <ul style={styles.ul} className="nav nav-tabs">
-        <li className="nav-item">
+      <ul style={styles.ul} className="row nav nav-tabs">
+        <li className="nav-item col-sm-12 col-md-3">
           <a
             href="#about"
             onClick={() => handlePageChange("About")}
@@ -41,7 +41,7 @@ function Navigation({ currentPage, handlePageChange }) {
             ABOUT
           </a>
         </li>
-        <li className="nav-item">
+        <li className="nav-item col-sm-12 col-md-3">
           <a
             href="#portfolio"
             onClick={() => handlePageChange("Portfolio")}
@@ -53,7 +53,7 @@ function Navigation({ currentPage, handlePageChange }) {
             PORTFOLIO
           </a>
         </li>
-        <li className="nav-item">
+        <li className="nav-item col-sm-12 col-md-3">
           <a
             href="#Contact"
             onClick={() => handlePageChange("Contact")}
@@ -65,7 +65,7 @@ function Navigation({ currentPage, handlePageChange }) {
             CONTACT ME
           </a>
         </li>
-        <li className="nav-item">
+        <li className="nav-item col-sm-12 col-md-3">
           <a
             href="#Resume"
             onClick={() => handlePageChange("Resume")}

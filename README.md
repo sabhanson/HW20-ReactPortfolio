@@ -1,70 +1,103 @@
-# Getting Started with Create React App
+# React Portfolio 📁 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+I built this portfolio using `React` so that employers can view my programming projects and contact me. I made it easy to navigate with mobile-first design. I have links to several of my coding applications for users to visit.
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Badges](#badges)
+- [Questions](#questions)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Clone [this repo](https://github.com/sabhanson/HW20-ReactPortfolio) from my Github to your local machine
+- Open VSCode and run the following command in the built-in terminal to install the necessary node packages
 
-### `npm test`
+```
+npm install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Run the following command to start the server
 
-### `npm run build`
+```
+npm run start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Congrats, you have successfully launched the server and are ready to view the site at `localhost:3000`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[Visit the deployed Github site](https://sabhanson.github.io/HW20-ReactPortfolio/)
 
-### `npm run eject`
+Here's a GIF of my Portfolio in use
+![gif of site](./public/Portfolio_Final.gif)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### About
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The about page features an image of me and a short bio
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![screenshot of about page](./public/about.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Portfolio
 
-## Learn More
+The portfolio page features 6 cards with links to various projects I have created
+![screenshot of portfolio page](./public/portfolio.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Contact Me
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The contact page features a form for users to fill out with their name, email, and a message that they can send me
+![screenshot of contact me page](./public/contact.png)
 
-### Code Splitting
+### Resume
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The resume page features a downloadable link of my resume and two cards with information about the front end and back end skills that I have
+![screenshot of resume page](./public/resume.png)
 
-### Analyzing the Bundle Size
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<p>
+MIT License
 
-### Making a Progressive Web App
+Copyright &copy; 2022
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-### Advanced Configuration
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-### Deployment
+  </p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Contributing
 
-### `npm run build` fails to minify
+To contribute, please contact me via [Github](https://www.github.com/sabhanson) or [email](mailto:sabhanson7@gmail.com)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Tests
+
+Testing was all self-done in the terminal and console using the Google Chrome developer tools.
+
+## Badges
+
+![GitHub followers](https://img.shields.io/github/followers/sabhanson?style=social)
+
+## Questions
+
+Contact me via [Github](https://www.github.com/sabhanson) or [email](mailto:sabhanson7@gmail.com)

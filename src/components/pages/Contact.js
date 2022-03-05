@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../../styles/Contact.css";
 
 const styles = {
   div: {
@@ -122,5 +121,3 @@ export default function Contact() {
     </div>
   );
 }
-
-// TODO: make submit button look cuter
