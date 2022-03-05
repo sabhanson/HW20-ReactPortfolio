@@ -4,80 +4,79 @@ import "../../styles/Contact.css";
 
 const styles = {
   div: {
-    padding: "2rem 0 3rem 0",
-    // height: '100%'
+    padding: "2rem 0 10rem 0",
+    background: "#89A98C",
   },
   h1: {
     fontSize: "3rem",
-    fontFamily: 'Unica One, cursive',
-    color: '#F4E285',
-    textShadow: '2px 2px black'
+    fontFamily: "Unica One, cursive",
+    color: "#F4E285",
+    textShadow: "2px 2px black",
   },
   inputs: {
-    width: "50%",
+    width: "100%",
     background: "#F4E285",
     border: "3px solid #FFA500",
     borderRadius: "8px",
     resize: "none",
-    fontFamily: 'Syne, sans-serif',
+    fontFamily: "Syne, sans-serif",
     margin: ".2rem",
-    color: 'black'
   },
   submit: {
     background: "#F4E285",
-    borderRadius: '10px',
+    borderRadius: "10px",
     border: "2px solid black",
-    fontFamily: 'Unica One, cursive',
-    color: 'black',
-    fontWeight: 'bold'
+    fontFamily: "Unica One, cursive",
+    color: "black",
+    width: "80px",
+    fontWeight: "bold",
   },
   p: {
-    fontFamily: "Syne, sans-serif"
-  }
+    paddingTop: "4rem",
+    fontFamily: "Syne, sans-serif",
+  },
 };
 
-// this page is loaded when CONTACT is selected from the navbar
-// includes a form with fields for NAME, EMAIL, and MESSAGE
-// when the form is unfocused, the validations are run to check if things were filled out properly
-// validates that name is filled out
-// validates that email is proper format
-// validates that a message is entered
-
 export default function Contact() {
-  const [focus, setFocus] = useState("Unfocus");
+  // const [focus, setFocus] = useState("Unfocus");
 
-  const handleFocusChange = (hover) => setFocus(hover);
+  // const handleFocusChange = (state) => setFocus(state);
 
-  // onBlur for name input
+  const validateName = (name) => {
+    if (name === "" || name.length < 1 || name.length > 50) {
+      window.alert("Please enter a name between 1 and 50 characters");
+    }
+  };
 
-// need to run a function to validate a name input
-  // must be between 1-40 characters
-  // if null, alert "you must enter a name"
-  // if valid, allow for form submission
+  const validateEmail = (email) => {
+    if (/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/.test(email)) {
+      return true;
+    } else {
+      window.alert("Please enter an email in valid format, email@website.com");
+    }
+  };
 
-// need to run a function to validate an email onBlur
-  // regex pattern: /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
-  // if null, alert "you must enter an email"
-  // if invalid, alert "you must enter an email in the proper format"
-  // if valid, allow for form submission
+  const validateMessage = (message) => {
+    if (message === "" || message.length > 300 || message.length < 20) {
+      window.alert("Please enter a message between 20 and 300 characters");
+    }
+  };
 
-// need to run a function to validate the message input
-  // must be between 10 and 500 characters
-  // if null, alert "you must enter a message"
-  // if valid, allow for form submission
-
-
+  const submit = () => {
+    console.log("submitted");
+  };
 
   return (
-    <div style={styles.div}>
+    <div className="row justify-content-center" style={styles.div}>
       <h1 style={styles.h1}>CONTACT ME</h1>
-      <form>
+      <form className="col-10 col-md-6">
         {/* NAME INPUT */}
-        {/* onFocus (when interacting) set the focus state to focus, onBlur (when not interacting) run the validation to check if the name is in the correct format */}
         <input
-          onFocus={() => handleFocusChange("Focus")}
-          onBlur={() => handleFocusChange("Unfocus")}
-          className={focus === "Unfocus" ? "unfocus" : "focus"}
+          // onFocus={() => handleFocusChange("Focus")}
+          onBlur={(e) => {
+            const name = e.target.value;
+            validateName(name);
+          }}
           style={styles.inputs}
           type={"text"}
           placeholder={"enter your name..."}
@@ -85,9 +84,11 @@ export default function Contact() {
         <br />
         {/* EMAIL INPUT */}
         <input
-          onFocus={() => handleFocusChange("Focus")}
-          onBlur={() => handleFocusChange("Unfocus")}
-          className={focus === "Unfocus" ? "unfocus" : "focus"}
+          // onFocus={() => handleFocusChange("Focus")}
+          onBlur={(e) => {
+            const email = e.target.value;
+            validateEmail(email);
+          }}
           style={styles.inputs}
           type={"email"}
           placeholder={"enter your email..."}
@@ -95,26 +96,31 @@ export default function Contact() {
         <br />
         {/* MESSAGE INPUT */}
         <textarea
-          onFocus={() => handleFocusChange("Focus")}
-          onBlur={() => handleFocusChange("Unfocus")}
-          className={focus === "Unfocus" ? "unfocus" : "focus"}
+          // onFocus={() => handleFocusChange("Focus")}
+          onBlur={(e) => {
+            const message = e.target.value;
+            validateMessage(message);
+          }}
           type={"text"}
           style={styles.inputs}
           placeholder={"enter your message..."}
         ></textarea>
         <br />
-        <input value="SUBMIT" type={"submit"} style={styles.submit}></input>
+        <input
+          onClick={submit()}
+          value="SUBMIT"
+          type={"button"}
+          style={styles.submit}
+        ></input>
       </form>
-      <p style={styles.p}>email: sabhanson7@gmail.com</p>
-      <p style={styles.p}>cell: 360-619-2530</p>
+      <p style={styles.p}>
+        alternatively, contact me via:
+        <br />
+        <strong>sabhanson7@gmail.com</strong> or
+        <strong> 360-619-2530</strong>
+      </p>
     </div>
   );
 }
 
-// onFocus
-
-
 // TODO: make submit button look cuter
-// TODO: validation for name
-// TODO: validation for email
-// TODO: validation for message

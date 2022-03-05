@@ -10,10 +10,9 @@ import projects from "./projects";
 // the header renders my name and the navbar items
 const styles = {
   div: {
-    backgroundImage: `url('./pearl-lake.jpg')`,
+    backgroundImage: `url('./pearl.jpeg')`,
     width: "100%",
-    paddingTop: '30px',
-    // display: "flex",
+    paddingTop: "30px",
     height: "200px",
     border: "3px dotted #ffa500",
     borderRadius: "20px",
@@ -21,17 +20,15 @@ const styles = {
     alignItems: "center",
   },
   innerDiv: {
-    width: '100%',
-    fontSize: '1.3rem'
+    width: "100%",
+    fontSize: "1.3rem",
+    color: "white",
   },
   h1: {
     fontSize: "3rem",
-    color: "black",
+    color: "#FFA500",
     fontFamily: "Unica One, cursive ",
-    textShadow: "1px 1px 2px #FFA500",
-  },
-  p: {
-    fontSize: "2rem",
+    textShadow: "1px 1px 2px black",
   },
 };
 
@@ -60,7 +57,7 @@ function Header() {
       <div style={styles.div}>
         <h1 style={styles.h1}>SABRINA HANSON</h1>
         <div style={styles.innerDiv}>
-          <p>jr web developer</p>
+          <p>JUNIOR WEB DEVELOPER</p>
         </div>
       </div>
       <Navigation

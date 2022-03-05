@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: '#84A98C';
 }
 
 .App-logo {
@@ -37,12 +38,19 @@
   }
 }
 
-
 /* importing google fonts SYNE and UNICA */
 @import url('https://fonts.googleapis.com/css2?family=Syne&family=Unica+One&display=swap');
 
-
 body {
   font-family: 'Syne', sans-serif;
+  overflow-x: hidden;
+  background-color: '#89a98c' !important;
   /* font-family: 'Unica One', cursive; */
+}
+
+html {
+  overflow-x: hidden;
+  background-color: '#89a98c' !important;
+  margin: 0;
+  padding: 0;
 }

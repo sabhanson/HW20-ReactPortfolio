@@ -4,7 +4,7 @@ import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 import "bootstrap/dist/css/bootstrap.min.css";
-import '../styles/Navigation.css'
+import "../styles/Navigation.css";
 
 const styles = {
   nav: {
@@ -14,12 +14,12 @@ const styles = {
   ul: {
     display: "flex",
     justifyContent: "space-around",
-    alignItems: "center"
+    alignItems: "center",
   },
   navbarLink: {
     color: "black",
     fontSize: "1.3rem",
-    fontFamily: "Unica One, cursive"
+    fontFamily: "Unica One, cursive",
   },
 };
 
