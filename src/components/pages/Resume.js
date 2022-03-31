@@ -1,5 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import ResumeDoc from "./../../files/Sabrina_Hanson___Resume-2022.docx";
 
 const styles = {
   div: {
@@ -35,7 +36,7 @@ export default function Resume() {
   return (
     <div style={styles.div}>
       <h1 style={styles.h1}>RESUME</h1>
-      <a className="link-dark" href="/Resume.pdf" download={true}>
+      <a className="link-dark" href={ResumeDoc} download={true}>
         DOWNLOAD MY RESUME
       </a>
       <div className="row d-flex justify-content-center">
