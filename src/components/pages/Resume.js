@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import ResumeDoc from "./../../files/Sabrina_Hanson___Resume-2022.docx";
+import ResumeDoc from "./../../files/Resume.pdf";
 
 const styles = {
   div: {
