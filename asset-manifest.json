@@ -1,17 +1,19 @@
 {
-  "files": {
-    "main.css": "/HW20-ReactPortfolio/static/css/main.7c892980.css",
-    "main.js": "/HW20-ReactPortfolio/static/js/main.eba710ca.js",
-    "static/js/787.a2cb61a6.chunk.js": "/HW20-ReactPortfolio/static/js/787.a2cb61a6.chunk.js",
-    "static/media/Sabrina_Hanson___Resume-2022.docx": "/HW20-ReactPortfolio/static/media/Sabrina_Hanson___Resume-2022.212c96da926bc661c87b.docx",
-    "static/media/IMG_3283.jpg": "/HW20-ReactPortfolio/static/media/IMG_3283.11124257f727f677c27a.jpg",
-    "index.html": "/HW20-ReactPortfolio/index.html",
-    "main.7c892980.css.map": "/HW20-ReactPortfolio/static/css/main.7c892980.css.map",
-    "main.eba710ca.js.map": "/HW20-ReactPortfolio/static/js/main.eba710ca.js.map",
-    "787.a2cb61a6.chunk.js.map": "/HW20-ReactPortfolio/static/js/787.a2cb61a6.chunk.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.7c892980.css",
-    "static/js/main.eba710ca.js"
-  ]
+  "main.css": "/sab-react-portfolio/static/css/main.d833eaec.chunk.css",
+  "main.js": "/sab-react-portfolio/static/js/main.834f3f51.chunk.js",
+  "main.js.map": "/sab-react-portfolio/static/js/main.834f3f51.chunk.js.map",
+  "static/js/1.97af9aab.chunk.js": "/sab-react-portfolio/static/js/1.97af9aab.chunk.js",
+  "static/js/1.97af9aab.chunk.js.map": "/sab-react-portfolio/static/js/1.97af9aab.chunk.js.map",
+  "static/css/2.1b7191b5.chunk.css": "/sab-react-portfolio/static/css/2.1b7191b5.chunk.css",
+  "static/js/2.defc74ba.chunk.js": "/sab-react-portfolio/static/js/2.defc74ba.chunk.js",
+  "static/js/2.defc74ba.chunk.js.map": "/sab-react-portfolio/static/js/2.defc74ba.chunk.js.map",
+  "runtime~main.js": "/sab-react-portfolio/static/js/runtime~main.b8584d87.js",
+  "runtime~main.js.map": "/sab-react-portfolio/static/js/runtime~main.b8584d87.js.map",
+  "static/media/IMG_3283.jpg": "/sab-react-portfolio/static/media/IMG_3283.45a045ff.jpg",
+  "static/media/Resume.pdf": "/sab-react-portfolio/static/media/Resume.d0c12ee1.pdf",
+  "static/css/main.d833eaec.chunk.css.map": "/sab-react-portfolio/static/css/main.d833eaec.chunk.css.map",
+  "static/css/2.1b7191b5.chunk.css.map": "/sab-react-portfolio/static/css/2.1b7191b5.chunk.css.map",
+  "index.html": "/sab-react-portfolio/index.html",
+  "precache-manifest.1c5b079ece91de531f2118ceb62770af.js": "/sab-react-portfolio/precache-manifest.1c5b079ece91de531f2118ceb62770af.js",
+  "service-worker.js": "/sab-react-portfolio/service-worker.js"
 }
