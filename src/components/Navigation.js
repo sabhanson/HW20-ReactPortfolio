@@ -29,8 +29,7 @@ function Navigation({ currentPage, handlePageChange }) {
       <ul style={styles.ul} className="row nav nav-tabs">
         <li className="nav-item col-sm-12 col-md-3">
           <a
-            href="#about"
-            onClick={() => handlePageChange("About")}
+            href="/about"
             className={currentPage === "About" ? "nav-link active" : "nav-link"}
             style={styles.navbarLink}
           >
@@ -39,8 +38,7 @@ function Navigation({ currentPage, handlePageChange }) {
         </li>
         <li className="nav-item col-sm-12 col-md-3">
           <a
-            href="#portfolio"
-            onClick={() => handlePageChange("Portfolio")}
+            href="/portfolio"
             className={
               currentPage === "Portfolio" ? "nav-link active" : "nav-link"
             }
@@ -51,8 +49,7 @@ function Navigation({ currentPage, handlePageChange }) {
         </li>
         <li className="nav-item col-sm-12 col-md-3">
           <a
-            href="#Contact"
-            onClick={() => handlePageChange("Contact")}
+            href="/contact"
             className={
               currentPage === "Contact" ? "nav-link active" : "nav-link"
             }
@@ -63,8 +60,7 @@ function Navigation({ currentPage, handlePageChange }) {
         </li>
         <li className="nav-item col-sm-12 col-md-3">
           <a
-            href="#Resume"
-            onClick={() => handlePageChange("Resume")}
+            href="/resume"
             className={
               currentPage === "Resume" ? "nav-link active" : "nav-link"
             }

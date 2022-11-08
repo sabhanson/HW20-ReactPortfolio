@@ -1,5 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import projects from "../../data/projects";
 
 const styles = {
   mainDiv: {
@@ -34,7 +35,7 @@ const styles = {
 // this page is loaded when portfolio is selected from the navbar
 // includes six PROJECTS with github links, deployed links, and short descriptions about the projects
 
-export default function Portfolio({ projects }) {
+export default function Portfolio() {
   return (
     <div style={styles.mainDiv} className="row">
       {projects.map((project) => (

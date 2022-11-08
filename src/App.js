@@ -2,6 +2,12 @@ import React from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import About from "./components/pages/About";
+import Portfolio from "./components/pages/Portfolio";
+import Contact from "./components/pages/Contact";
+import Resume from "./components/pages/Resume";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const styles = {
   app: {
@@ -17,11 +23,25 @@ const styles = {
 // they will see the footer
 // LINK TO GITHUB | LINK TO LINKEDIN
 
+//TODO: react-router-dom instead of useState routing
 function App() {
   return (
     <div className="App" style={styles.app}>
-      <Header />
-      <Footer />
+      <Router>
+        <div className="flex-column justify-flex-start min-100-vh">
+          <Header />
+          <div className="container">
+            <Routes>
+              <Route path="/" element={<About />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/resume" element={<Resume />} />
+            </Routes>
+          </div>
+          <Footer />
+        </div>
+      </Router>
     </div>
   );
 }

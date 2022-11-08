@@ -5,7 +5,6 @@ import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 import "bootstrap/dist/css/bootstrap.min.css";
-import projects from "./../data/projects";
 
 // the header renders my name and the navbar items
 const styles = {
@@ -31,25 +30,6 @@ const styles = {
 };
 
 function Header() {
-  const [currentPage, setCurrentPage] = useState("About");
-
-  const renderPage = () => {
-    if (currentPage === "About") {
-      return <About />;
-    }
-    if (currentPage === "Portfolio") {
-      return <Portfolio projects={projects} />;
-    }
-    if (currentPage === "Contact") {
-      return <Contact />;
-    }
-    if (currentPage === "Resume") {
-      return <Resume />;
-    }
-  };
-
-  const handlePageChange = (page) => setCurrentPage(page);
-
   return (
     <div>
       {/* <div style={styles.div}>
@@ -58,11 +38,7 @@ function Header() {
           <p>JUNIOR WEB DEVELOPER</p>
         </div>
       </div> */}
-      <Navigation
-        currentPage={currentPage}
-        handlePageChange={handlePageChange}
-      />
-      {renderPage()}
+      <Navigation />
     </div>
   );
 }
