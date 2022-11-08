@@ -14,7 +14,7 @@ const styles = {
   },
   navbarLink: {
     color: "black",
-    fontSize: "1.3rem",
+    fontSize: "2.5rem",
     fontFamily: "Unica One, cursive",
   },
 };
@@ -58,7 +58,7 @@ function Navigation({ currentPage, handlePageChange }) {
             }
             style={styles.navbarLink}
           >
-            CONTACT ME
+            CONTACT
           </a>
         </li>
         <li className="nav-item col-sm-12 col-md-3">

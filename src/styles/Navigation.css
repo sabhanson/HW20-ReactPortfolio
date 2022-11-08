@@ -1,8 +1,16 @@
 .nav-link.active {
-  background-color: #f4e285 !important;
+  background-color: #f0ecd8 !important;
   border-color: none;
 }
 
 .nav-tabs {
   border: 3px solid black !important;
+}
+
+div {
+  background-color: '#89a98c' !important;
+}
+
+.nav-item {
+  padding: 0;
 }

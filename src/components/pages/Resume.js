@@ -35,7 +35,6 @@ const styles = {
 export default function Resume() {
   return (
     <div style={styles.div}>
-      <h1 style={styles.h1}>RESUME</h1>
       <a className="link-dark" href={ResumeDoc} download={true}>
         DOWNLOAD MY RESUME
       </a>

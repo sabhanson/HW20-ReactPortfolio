@@ -5,7 +5,7 @@ import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 import "bootstrap/dist/css/bootstrap.min.css";
-import projects from "./projects";
+import projects from "./../data/projects";
 
 // the header renders my name and the navbar items
 const styles = {
@@ -52,12 +52,12 @@ function Header() {
 
   return (
     <div>
-      <div style={styles.div}>
+      {/* <div style={styles.div}>
         <h1 style={styles.h1}>SABRINA HANSON</h1>
         <div style={styles.innerDiv}>
           <p>JUNIOR WEB DEVELOPER</p>
         </div>
-      </div>
+      </div> */}
       <Navigation
         currentPage={currentPage}
         handlePageChange={handlePageChange}

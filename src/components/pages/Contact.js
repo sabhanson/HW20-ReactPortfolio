@@ -61,54 +61,54 @@ export default function Contact() {
     }
   };
 
-  return (
-    <div className="row justify-content-center" style={styles.div}>
-      <h1 style={styles.h1}>CONTACT ME</h1>
-      <form className="col-10 col-md-6">
-        {/* NAME INPUT */}
-        <input
-          // onFocus={() => handleFocusChange("Focus")}
-          onBlur={(e) => {
-            const name = e.target.value;
-            validateName(name);
-          }}
-          style={styles.inputs}
-          type={"text"}
-          placeholder={"enter your name..."}
-        ></input>
-        <br />
-        {/* EMAIL INPUT */}
-        <input
-          // onFocus={() => handleFocusChange("Focus")}
-          onBlur={(e) => {
-            const email = e.target.value;
-            validateEmail(email);
-          }}
-          style={styles.inputs}
-          type={"email"}
-          placeholder={"enter your email..."}
-        ></input>
-        <br />
-        {/* MESSAGE INPUT */}
-        <textarea
-          // onFocus={() => handleFocusChange("Focus")}
-          onBlur={(e) => {
-            const message = e.target.value;
-            validateMessage(message);
-          }}
-          type={"text"}
-          style={styles.inputs}
-          placeholder={"enter your message..."}
-        ></textarea>
-        <br />
-        <input value="SUBMIT" type={"button"} style={styles.submit}></input>
-      </form>
-      <p style={styles.p}>
-        alternatively, contact me via:
-        <br />
-        <strong>sabhanson7@gmail.com</strong> or
-        <strong> 360-619-2530</strong>
-      </p>
-    </div>
-  );
+  return <p>rebuilding, hang tight :~)</p>;
 }
+
+//& OLD CONTACT FORM
+// <div className="row justify-content-center" style={styles.div}>
+// <form className="col-10 col-md-6">
+//   {/* NAME INPUT */}
+//   <input
+//     // onFocus={() => handleFocusChange("Focus")}
+//     onBlur={(e) => {
+//       const name = e.target.value;
+//       validateName(name);
+//     }}
+//     style={styles.inputs}
+//     type={"text"}
+//     placeholder={"enter your name..."}
+//   ></input>
+//   <br />
+//   {/* EMAIL INPUT */}
+//   <input
+//     // onFocus={() => handleFocusChange("Focus")}
+//     onBlur={(e) => {
+//       const email = e.target.value;
+//       validateEmail(email);
+//     }}
+//     style={styles.inputs}
+//     type={"email"}
+//     placeholder={"enter your email..."}
+//   ></input>
+//   <br />
+//   {/* MESSAGE INPUT */}
+//   <textarea
+//     // onFocus={() => handleFocusChange("Focus")}
+//     onBlur={(e) => {
+//       const message = e.target.value;
+//       validateMessage(message);
+//     }}
+//     type={"text"}
+//     style={styles.inputs}
+//     placeholder={"enter your message..."}
+//   ></textarea>
+//   <br />
+//   <input value="SUBMIT" type={"button"} style={styles.submit}></input>
+// </form>
+// <p style={styles.p}>
+//   alternatively, contact me via:
+//   <br />
+//   <strong>sabhanson7@gmail.com</strong> or
+//   <strong> 360-619-2530</strong>
+// </p>
+// </div>

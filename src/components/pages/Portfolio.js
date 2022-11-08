@@ -37,8 +37,6 @@ const styles = {
 export default function Portfolio({ projects }) {
   return (
     <div style={styles.mainDiv} className="row">
-      <h1 style={styles.h1}>MY PORTFOLIO</h1>
-
       {projects.map((project) => (
         <div
           style={styles.cardDiv}
