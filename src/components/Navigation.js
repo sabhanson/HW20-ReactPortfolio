@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/Navigation.css";
+import { NavLink } from "react-router-dom";
 
 const styles = {
   nav: {
@@ -13,7 +14,8 @@ const styles = {
     alignItems: "center",
   },
   navbarLink: {
-    color: "black",
+    color: "white",
+    textShadow: "1px 1px 2px black",
     fontSize: "2.5rem",
     fontFamily: "Unica One, cursive",
   },
@@ -26,7 +28,7 @@ const styles = {
 function Navigation({ currentPage, handlePageChange }) {
   return (
     <nav style={styles.nav}>
-      <ul style={styles.ul} className="row nav nav-tabs">
+      <ul style={styles.ul} className="row nav ">
         <li className="nav-item col-sm-12 col-md-3">
           <a
             href="/about"
@@ -50,9 +52,8 @@ function Navigation({ currentPage, handlePageChange }) {
         <li className="nav-item col-sm-12 col-md-3">
           <a
             href="/contact"
-            className={
-              currentPage === "Contact" ? "nav-link active" : "nav-link"
-            }
+            className="nav-link"
+            activeClassName="nav-link active"
             style={styles.navbarLink}
           >
             CONTACT

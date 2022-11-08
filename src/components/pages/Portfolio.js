@@ -8,7 +8,6 @@ const styles = {
     justifyContent: "center",
     paddingBottom: "3rem",
     height: "100%",
-    background: "#84A98C",
   },
   cardDiv: {
     margin: "1rem",
@@ -51,7 +50,7 @@ export default function Portfolio() {
             className="card-img-top img img-fluid"
           />
           <div className="card-body">
-            <p className="card-text">{project.name}</p>
+            <p className="card-text text-black">{project.name}</p>
             <hr />
             <div className="card-body">
               <a
@@ -60,7 +59,7 @@ export default function Portfolio() {
                 className="card-link"
                 rel={"noreferrer"}
               >
-                <i style={styles.icon} class="bi bi-github"></i>
+                <i style={styles.icon} className="bi bi-github"></i>
               </a>
               <a
                 href={project.deployedURL}

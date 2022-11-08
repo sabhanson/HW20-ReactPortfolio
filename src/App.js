@@ -11,8 +11,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const styles = {
   app: {
-    background: "#84A98C",
+    backgroundImage:
+      "linear-gradient(193deg, rgba(195,200,200,1) 0%, rgba(31,29,29,1) 100%)",
     height: "100vh",
+    color: "white",
   },
 };
 // when the app is initially opened, a user will see the main/default page (about me)
@@ -23,7 +25,6 @@ const styles = {
 // they will see the footer
 // LINK TO GITHUB | LINK TO LINKEDIN
 
-//TODO: react-router-dom instead of useState routing
 function App() {
   return (
     <div className="App" style={styles.app}>
