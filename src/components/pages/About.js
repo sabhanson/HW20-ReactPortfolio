@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Headshot from "./../../images/IMG_3283.jpg";
+import Headshot from "./../../images/123_1.jpg";
 
 const styles = {
   div: {
@@ -24,7 +24,6 @@ const styles = {
     fontSize: "1rem",
   },
   img: {
-    borderRadius: "50%",
     width: "250px",
   },
 };
@@ -34,7 +33,7 @@ export default function About() {
     <div style={styles.div}>
       <h1 style={styles.h1}>ABOUT ME</h1>
       {/* TODO: take a better headshot */}
-      <img style={styles.img} alt="photo of Sabrina" src={Headshot} />
+      <img style={styles.img} alt="Sabrina Hanson" src={Headshot} />
       <div className="row d-flex justify-content-center">
         <div className="col-sm-11 col-md-8 col-lg-6 my-3">
           <p style={styles.p}>
