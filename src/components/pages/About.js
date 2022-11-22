@@ -1,44 +1,47 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Headshot from "./../../images/123_1.jpg";
-
-const styles = {
-  div: {
-    paddingBottom: "3rem",
-    paddingTop: "2rem",
-  },
-  h1: {
-    fontSize: "3rem",
-    fontFamily: "Unica One, cursive",
-    color: "#F4E285",
-    textShadow: "2px 2px black",
-  },
-  p: {
-    padding: "1rem",
-    margin: "1.5rem 3rem",
-    fontFamily: "Syne, sans-serif",
-
-    fontSize: "1rem",
-  },
-  img: {
-    width: "250px",
-  },
-};
+import "../../styles/About.css";
 
 export default function About() {
   return (
-    <div style={styles.div}>
-      <img style={styles.img} alt="Sabrina Hanson" src={Headshot} />
-      <div className="row d-flex justify-content-center">
-        <div className="col-sm-11 col-md-8 col-lg-6 my-3">
-          <p style={styles.p}>
-            I'm a recent coding bootcamp graduate looking to expand my skills
-            and knowledge. I have experience with both front and back end
-            development. I am particularly passionate about HTML and CSS to make
-            the web more pleasant and beautiful. I live in SW Washington state
-            with my partner and our two dogs. My hobbies include thrift
-            shopping, road trips, photography, and making stained glass art.
-          </p>
+    <div className="container-fluid">
+      <div className="row">
+        <div className="col-md-6 col-sm-12">
+          <img src={Headshot} class="rounded" alt="Sabrina Hanson" />
+        </div>
+        <div className="col-md-6 col-sm-12">
+          <h1>Sabrina Hanson</h1>
+          <p>Web developer and creative problem-solver.</p>
+          <ul>
+            <li>
+              <a
+                href="http://github.com/sabhanson"
+                target={"_blank"}
+                rel={"noreferrer"}
+              >
+                <i class="bi bi-github"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://www.linkedin.com/in/sabrinahanson"
+                target={"_blank"}
+                rel={"noreferrer"}
+              >
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://stackoverflow.com/users/17640823/sabrina-hanson"
+                target={"_blank"}
+                rel={"noreferrer"}
+              >
+                <i class="bi bi-stack-overflow"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
