@@ -1,7 +1,7 @@
 {
   "main.css": "/sab-react-portfolio/static/css/main.0e47ab43.chunk.css",
-  "main.js": "/sab-react-portfolio/static/js/main.1a0d2f2c.chunk.js",
-  "main.js.map": "/sab-react-portfolio/static/js/main.1a0d2f2c.chunk.js.map",
+  "main.js": "/sab-react-portfolio/static/js/main.ad664773.chunk.js",
+  "main.js.map": "/sab-react-portfolio/static/js/main.ad664773.chunk.js.map",
   "static/js/1.6a7bfa4d.chunk.js": "/sab-react-portfolio/static/js/1.6a7bfa4d.chunk.js",
   "static/js/1.6a7bfa4d.chunk.js.map": "/sab-react-portfolio/static/js/1.6a7bfa4d.chunk.js.map",
   "static/css/2.d7ae1caf.chunk.css": "/sab-react-portfolio/static/css/2.d7ae1caf.chunk.css",
@@ -11,9 +11,9 @@
   "runtime~main.js.map": "/sab-react-portfolio/static/js/runtime~main.98000151.js.map",
   "static/media/123_1.jpg": "/sab-react-portfolio/static/media/123_1.e8895eb3.jpg",
   "static/media/Resume.pdf": "/sab-react-portfolio/static/media/Resume.9dc3ca20.pdf",
-  "static/css/2.d7ae1caf.chunk.css.map": "/sab-react-portfolio/static/css/2.d7ae1caf.chunk.css.map",
   "static/css/main.0e47ab43.chunk.css.map": "/sab-react-portfolio/static/css/main.0e47ab43.chunk.css.map",
+  "static/css/2.d7ae1caf.chunk.css.map": "/sab-react-portfolio/static/css/2.d7ae1caf.chunk.css.map",
   "index.html": "/sab-react-portfolio/index.html",
-  "precache-manifest.c3b8d873f3c07ce6d8c3ae20e2365c2d.js": "/sab-react-portfolio/precache-manifest.c3b8d873f3c07ce6d8c3ae20e2365c2d.js",
+  "precache-manifest.18a2d998889748b91840bd6e2f9593e8.js": "/sab-react-portfolio/precache-manifest.18a2d998889748b91840bd6e2f9593e8.js",
   "service-worker.js": "/sab-react-portfolio/service-worker.js"
 }
