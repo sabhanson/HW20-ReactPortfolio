@@ -35,9 +35,9 @@ function Navigation({ currentPage, handlePageChange }) {
           </Link>
         </li>
         <li className="nav-item col-sm-12 col-md-3">
-          <a href="/portfolio" style={styles.navbarLink}>
+          <Link to="/portfolio" style={styles.navbarLink}>
             PORTFOLIO
-          </a>
+          </Link>
         </li>
         <li className="nav-item col-sm-12 col-md-3">
           <Link to="/contact" style={styles.navbarLink}>
