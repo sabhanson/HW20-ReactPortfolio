@@ -30,7 +30,7 @@ function Navigation({ currentPage, handlePageChange }) {
       <ul style={styles.ul} className="row nav ">
         <li className="nav-item col-sm-12 col-md-3">
           <a
-            href="/sab-react-portfolio"
+            href="/"
             className={currentPage === "" ? "nav-link active" : "nav-link"}
             style={styles.navbarLink}
           >
@@ -39,7 +39,7 @@ function Navigation({ currentPage, handlePageChange }) {
         </li>
         <li className="nav-item col-sm-12 col-md-3">
           <a
-            href="sab-react-portfolio/portfolio"
+            href="/portfolio"
             className={
               currentPage === "Portfolio" ? "nav-link active" : "nav-link"
             }
@@ -50,7 +50,7 @@ function Navigation({ currentPage, handlePageChange }) {
         </li>
         <li className="nav-item col-sm-12 col-md-3">
           <a
-            href="sab-react-portfolio/contact"
+            href="/contact"
             className="nav-link"
             activeClassName="nav-link active"
             style={styles.navbarLink}
@@ -60,7 +60,7 @@ function Navigation({ currentPage, handlePageChange }) {
         </li>
         <li className="nav-item col-sm-12 col-md-3">
           <a
-            href="sab-react-portfolio/resume"
+            href="/resume"
             className={
               currentPage === "Resume" ? "nav-link active" : "nav-link"
             }
