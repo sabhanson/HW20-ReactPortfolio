@@ -1,5 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../styles/Footer.css";
 
 const styles = {
   p: {
@@ -12,7 +13,7 @@ const styles = {
 
 function Footer() {
   return (
-    <footer style={styles.footer}>
+    <footer>
       <p style={styles.p}>&copy; 2022</p>
     </footer>
   );
