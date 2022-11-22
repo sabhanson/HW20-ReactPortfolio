@@ -23,9 +23,9 @@ const styles = {
   card: {
     fontFamily: "Syne, sans-serif",
     margin: "2rem",
-    background: "#F4E285",
-    borderRadius: "20px",
-    border: "3px solid #FFA500",
+    // background: "#F4E285",
+    // borderRadius: "20px",
+    // border: "3px solid #FFA500",
   },
 };
 
