@@ -30,22 +30,22 @@ function Navigation({ currentPage, handlePageChange }) {
     <nav style={styles.nav}>
       <ul style={styles.ul} className="row nav ">
         <li className="nav-item col-sm-12 col-md-3">
-          <Link to="/" style={styles.navbarLink}>
+          <Link to="/sab-react-portfolio" style={styles.navbarLink}>
             ABOUT
           </Link>
         </li>
         <li className="nav-item col-sm-12 col-md-3">
-          <Link to="/portfolio" style={styles.navbarLink}>
+          <Link to="sab-react-portfolio/portfolio" style={styles.navbarLink}>
             PORTFOLIO
           </Link>
         </li>
         <li className="nav-item col-sm-12 col-md-3">
-          <Link to="/contact" style={styles.navbarLink}>
+          <Link to="sab-react-portfolio/contact" style={styles.navbarLink}>
             CONTACT
           </Link>
         </li>
         <li className="nav-item col-sm-12 col-md-3">
-          <Link to="/resume" style={styles.navbarLink}>
+          <Link to="sab-react-portfolio/resume" style={styles.navbarLink}>
             RESUME
           </Link>
         </li>
