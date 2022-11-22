@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Header from "./components/Header";
+import Navigation from "./components/Navigation";
 // import Footer from "./components/Footer";
 import About from "./components/pages/About";
 import Portfolio from "./components/pages/Portfolio";
@@ -21,7 +21,7 @@ function App() {
     <div className="App">
       <Router>
         <div className="flex-column justify-flex-start min-100-vh">
-          <Header />
+          <Navigation />
           <div className="container">
             <Routes>
               <Route path="/" element={<About />} />

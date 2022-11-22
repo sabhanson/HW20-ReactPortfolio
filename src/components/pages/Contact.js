@@ -3,8 +3,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const styles = {
   div: {
-    padding: "2rem 0 10rem 0",
-    background: "#89A98C",
+    paddingTop: "2rem",
+    height: "100%",
+    fontFamily: "Syne, sans-serif",
+  },
+  icon: {
+    color: "black",
   },
   h1: {
     fontSize: "3rem",
@@ -12,103 +16,45 @@ const styles = {
     color: "#F4E285",
     textShadow: "2px 2px black",
   },
-  inputs: {
-    width: "100%",
-    background: "#F4E285",
-    border: "3px solid #FFA500",
-    borderRadius: "8px",
-    resize: "none",
-    fontFamily: "Syne, sans-serif",
-    margin: ".2rem",
+  list: {
+    fontSize: "1.2rem",
+    display: "flex",
+    justifyContent: "center",
   },
-  submit: {
-    background: "#F4E285",
-    borderRadius: "10px",
-    border: "2px solid black",
-    fontFamily: "Unica One, cursive",
-    color: "black",
-    width: "80px",
-    fontWeight: "bold",
-  },
-  p: {
-    paddingTop: "4rem",
+  card: {
     fontFamily: "Syne, sans-serif",
+    margin: "2rem",
   },
 };
 
 export default function Contact() {
-  // const [focus, setFocus] = useState("Unfocus");
-
-  // const handleFocusChange = (state) => setFocus(state);
-
-  const validateName = (name) => {
-    if (name === "" || name.length < 1 || name.length > 50) {
-      window.alert("Please enter a name between 1 and 50 characters");
-    }
-  };
-
-  const validateEmail = (email) => {
-    if (/^([a-z0-9_.-]+)@([\da-z.-]+).([a-z.]{2,6})$/.test(email)) {
-      return true;
-    } else {
-      window.alert("Please enter an email in valid format, email@website.com");
-    }
-  };
-
-  const validateMessage = (message) => {
-    if (message === "" || message.length > 300 || message.length < 20) {
-      window.alert("Please enter a message between 20 and 300 characters");
-    }
-  };
-
-  return <p>rebuilding, hang tight :~)</p>;
+  return (
+    <div style={styles.div}>
+      <div className="row d-flex justify-content-center">
+        <div style={styles.card} className="card col-8 col-md-6">
+          <h3>Contact Me</h3>
+          <ul style={styles.list} className="list-group list-unstyled">
+            <li>
+              <a
+                href="mailto:sabhanson7@gmail.com"
+                target={"_blank"}
+                rel={"noreferrer"}
+              >
+                <i style={styles.icon} class="bi bi-envelope-fill"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://github.com/sabhanson"
+                target={"_blank"}
+                rel={"noreferrer"}
+              >
+                <i style={styles.icon} class="bi bi-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
 }
-
-//& OLD CONTACT FORM
-// <div className="row justify-content-center" style={styles.div}>
-// <form className="col-10 col-md-6">
-//   {/* NAME INPUT */}
-//   <input
-//     // onFocus={() => handleFocusChange("Focus")}
-//     onBlur={(e) => {
-//       const name = e.target.value;
-//       validateName(name);
-//     }}
-//     style={styles.inputs}
-//     type={"text"}
-//     placeholder={"enter your name..."}
-//   ></input>
-//   <br />
-//   {/* EMAIL INPUT */}
-//   <input
-//     // onFocus={() => handleFocusChange("Focus")}
-//     onBlur={(e) => {
-//       const email = e.target.value;
-//       validateEmail(email);
-//     }}
-//     style={styles.inputs}
-//     type={"email"}
-//     placeholder={"enter your email..."}
-//   ></input>
-//   <br />
-//   {/* MESSAGE INPUT */}
-//   <textarea
-//     // onFocus={() => handleFocusChange("Focus")}
-//     onBlur={(e) => {
-//       const message = e.target.value;
-//       validateMessage(message);
-//     }}
-//     type={"text"}
-//     style={styles.inputs}
-//     placeholder={"enter your message..."}
-//   ></textarea>
-//   <br />
-//   <input value="SUBMIT" type={"button"} style={styles.submit}></input>
-// </form>
-// <p style={styles.p}>
-//   alternatively, contact me via:
-//   <br />
-//   <strong>sabhanson7@gmail.com</strong> or
-//   <strong> 360-619-2530</strong>
-// </p>
-// </div>

@@ -1,7 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/Navigation.css";
-import { NavLink } from "react-router-dom";
 
 const styles = {
   nav: {
@@ -17,7 +16,7 @@ const styles = {
     color: "white",
     textShadow: "1px 1px 2px black",
     fontSize: "2.5rem",
-    fontFamily: "Unica One, cursive",
+    fontFamily: "Syne, sans-serif",
   },
 };
 
