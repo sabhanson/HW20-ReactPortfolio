@@ -9,14 +9,6 @@ import Resume from "./components/pages/Resume";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-const styles = {
-  app: {
-    backgroundImage:
-      "linear-gradient(193deg, rgba(195,200,200,1) 0%, rgba(31,29,29,1) 100%)",
-    height: "100vh",
-    color: "white",
-  },
-};
 // when the app is initially opened, a user will see the main/default page (about me)
 // they will see the navbar with:
 //SABRINA HANSON-----ABOUT ME | PORTFOLIO | CONTACT | RESUME
@@ -27,7 +19,7 @@ const styles = {
 
 function App() {
   return (
-    <div className="App" style={styles.app}>
+    <div className="App">
       <Router>
         <div className="flex-column justify-flex-start min-100-vh">
           <Header />

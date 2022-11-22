@@ -6,3 +6,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+:root {
+  background-image: linear-gradient(
+    193deg,
+    rgba(195, 200, 200, 1) 0%,
+    rgba(31, 29, 29, 1) 100%
+  ) !important;
+}
