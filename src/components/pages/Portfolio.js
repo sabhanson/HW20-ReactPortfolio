@@ -1,12 +1,13 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import projects from "../../data/projects";
+import "../../styles/Portfolio.css";
 
 const styles = {
   mainDiv: {
     display: "flex",
     justifyContent: "center",
-    paddingBottom: "3rem",
+    // paddingBottom: "3rem",
     height: "100%",
   },
   cardDiv: {
@@ -14,20 +15,9 @@ const styles = {
     borderRadius: "10px",
     fontFamily: "Syne, sans-serif",
   },
-  h1: {
-    fontSize: "3rem",
-    fontFamily: "Unica One, cursive",
-    color: "#F4E285",
-    paddingTop: "2rem",
-    textShadow: "2px 2px black",
-  },
   icon: {
-    color: "#FFA500",
+    color: "black",
     fontSize: "2rem",
-  },
-  img: {
-    // maxHeight: "60%",
-    // width: "auto",
   },
 };
 
@@ -51,6 +41,7 @@ export default function Portfolio() {
           />
           <div className="card-body">
             <p className="card-text text-black">{project.name}</p>
+            <h6>{project.tech}</h6>
             <hr />
             <div className="card-body">
               <a

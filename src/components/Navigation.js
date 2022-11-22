@@ -31,8 +31,8 @@ function Navigation({ currentPage, handlePageChange }) {
       <ul style={styles.ul} className="row nav ">
         <li className="nav-item col-sm-12 col-md-3">
           <a
-            href="/about"
-            className={currentPage === "About" ? "nav-link active" : "nav-link"}
+            href="/"
+            className={currentPage === "" ? "nav-link active" : "nav-link"}
             style={styles.navbarLink}
           >
             ABOUT
