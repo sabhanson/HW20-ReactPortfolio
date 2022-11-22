@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/Navigation.css";
+import { Link } from "react-router-dom";
 
 const styles = {
   nav: {
@@ -29,45 +30,24 @@ function Navigation({ currentPage, handlePageChange }) {
     <nav style={styles.nav}>
       <ul style={styles.ul} className="row nav ">
         <li className="nav-item col-sm-12 col-md-3">
-          <a
-            href="/"
-            className={currentPage === "" ? "nav-link active" : "nav-link"}
-            style={styles.navbarLink}
-          >
+          <Link to="/" style={styles.navbarLink}>
             ABOUT
-          </a>
+          </Link>
         </li>
         <li className="nav-item col-sm-12 col-md-3">
-          <a
-            href="/portfolio"
-            className={
-              currentPage === "Portfolio" ? "nav-link active" : "nav-link"
-            }
-            style={styles.navbarLink}
-          >
+          <a href="/portfolio" style={styles.navbarLink}>
             PORTFOLIO
           </a>
         </li>
         <li className="nav-item col-sm-12 col-md-3">
-          <a
-            href="/contact"
-            className="nav-link"
-            activeClassName="nav-link active"
-            style={styles.navbarLink}
-          >
+          <Link to="/contact" style={styles.navbarLink}>
             CONTACT
-          </a>
+          </Link>
         </li>
         <li className="nav-item col-sm-12 col-md-3">
-          <a
-            href="/resume"
-            className={
-              currentPage === "Resume" ? "nav-link active" : "nav-link"
-            }
-            style={styles.navbarLink}
-          >
+          <Link to="/resume" style={styles.navbarLink}>
             RESUME
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
