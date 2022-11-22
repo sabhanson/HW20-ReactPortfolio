@@ -24,11 +24,23 @@ function App() {
           <Navigation />
           <div className="container">
             <Routes>
-              <Route path="/" element={<About />} />
+              <Route exact path="sab-react-portfolio/" element={<About />} />
               {/* <Route path="/about" element={<About />} /> */}
-              <Route path="/portfolio" element={<Portfolio />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/resume" element={<Resume />} />
+              <Route
+                exact
+                path="sab-react-portfolio/portfolio"
+                element={<Portfolio />}
+              />
+              <Route
+                exact
+                path="sab-react-portfolio/contact"
+                element={<Contact />}
+              />
+              <Route
+                exact
+                path="sab-react-portfolio/resume"
+                element={<Resume />}
+              />
             </Routes>
           </div>
           {/* <Footer /> */}
