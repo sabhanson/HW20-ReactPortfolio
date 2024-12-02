@@ -52,14 +52,14 @@ export default function Portfolio() {
               >
                 <i style={styles.icon} className="bi bi-github"></i>
               </a>
-              <a
-                href={project.deployedURL}
-                target={"_blank"}
-                className="card-link"
-                rel={"noreferrer"}
-              >
-                <i style={styles.icon} class="bi bi-globe"></i>
-              </a>
+              // <a
+              //   href={project.deployedURL}
+              //   target={"_blank"}
+              //   className="card-link"
+              //   rel={"noreferrer"}
+              // >
+              //   <i style={styles.icon} class="bi bi-globe"></i>
+              // </a>
             </div>
           </div>
         </div>
