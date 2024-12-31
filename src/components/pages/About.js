@@ -8,10 +8,10 @@ export default function About() {
     <div className="container-fluid">
       <div className="row">
         <div className="col-md-6 col-sm-12">
-          <img src={Headshot} class="rounded" alt="Sabrina Hanson" />
+          <img src={Headshot} class="rounded" alt="Sabrina Martin" />
         </div>
         <div className="col-md-6 col-sm-12">
-          <h1>Sabrina Hanson</h1>
+          <h1>Sabrina Martin</h1>
           <p>Web developer and creative problem-solver.</p>
           <ul>
             <li>
