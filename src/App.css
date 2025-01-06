@@ -38,6 +38,10 @@ body {
   background-color: transparent !important;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 html {
   overflow-x: hidden;
   margin: 0;
