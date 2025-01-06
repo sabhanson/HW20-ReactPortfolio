@@ -44,11 +44,11 @@ function Navigation({ currentPage, handlePageChange }) {
             CONTACT
           </Link>
         </li>
-        <li className="nav-item col-sm-12 col-md-3">
+        {/* <li className="nav-item col-sm-12 col-md-3">
           <Link to="sab-react-portfolio/resume" style={styles.navbarLink}>
             RESUME
           </Link>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
