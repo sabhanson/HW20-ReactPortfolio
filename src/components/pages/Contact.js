@@ -52,6 +52,15 @@ export default function Contact() {
                 <i style={styles.icon} class="bi bi-github"></i>
               </a>
             </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/sabrinamartin0/"
+                target={"_blank"}
+                rel={"noreferrer"}
+              >
+                <i style={styles.icon} class="bi bi-linkedin"></i>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
