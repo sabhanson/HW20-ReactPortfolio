@@ -36,7 +36,7 @@ export default function Portfolio() {
           <img
             style={styles.img}
             src={project.imageURL}
-            alt="alt text"
+            alt={project.altText}
             className="card-img-top img img-fluid"
           />
           <div className="card-body">
