@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "ff7972f1ae5d4bdaf461",
-    "url": "/sab-react-portfolio/static/css/main.ed77f9b7.chunk.css"
+    "revision": "ec0f58d022a173601fb1",
+    "url": "/sab-react-portfolio/static/css/main.f369b5f7.chunk.css"
   },
   {
-    "revision": "ff7972f1ae5d4bdaf461",
-    "url": "/sab-react-portfolio/static/js/main.ff7972f1.chunk.js"
+    "revision": "ec0f58d022a173601fb1",
+    "url": "/sab-react-portfolio/static/js/main.ec0f58d0.chunk.js"
   },
   {
     "revision": "6a7bfa4df9242b40edff",
     "url": "/sab-react-portfolio/static/js/1.6a7bfa4d.chunk.js"
   },
   {
-    "revision": "4459f4b64474eb8b6dd7",
+    "revision": "610ea2872e885c4d2cf1",
     "url": "/sab-react-portfolio/static/css/2.d7ae1caf.chunk.css"
   },
   {
-    "revision": "4459f4b64474eb8b6dd7",
-    "url": "/sab-react-portfolio/static/js/2.4459f4b6.chunk.js"
+    "revision": "610ea2872e885c4d2cf1",
+    "url": "/sab-react-portfolio/static/js/2.610ea287.chunk.js"
   },
   {
     "revision": "98000151ec1ac23e6424",
@@ -32,7 +32,7 @@ self.__precacheManifest = [
     "url": "/sab-react-portfolio/static/media/Resume.9dc3ca20.pdf"
   },
   {
-    "revision": "8ad538cadfca3a0dc2fcfb7dfa0f0916",
+    "revision": "df5b544b2b0197e0d2ea12a57433fcb2",
     "url": "/sab-react-portfolio/index.html"
   }
 ];
