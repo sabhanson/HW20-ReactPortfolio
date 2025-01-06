@@ -12,7 +12,7 @@ export default function About() {
         </div>
         <div className="col-md-6 col-sm-12">
           <h1>Sabrina Martin</h1>
-          <p>Web developer and creative problem-solver.</p>
+          <p>Software engineer with a passion for solving problems.</p>
           <ul>
             <li>
               <a
